@@ -1,8 +1,7 @@
 # Version history
 
-We follow [Semantic Versions](https://semver.org/).
+We follow [Calendar Versions](https://calver.org/).
 
-
-## Version 0.1.0
+## Version 2020.1
 
 - Initial release

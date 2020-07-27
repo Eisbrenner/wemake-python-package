@@ -9,7 +9,7 @@ style = "https://raw.githubusercontent.com/wemake-services/wemake-python-stylegu
 
 [tool.poetry]
 name = "{{ cookiecutter.project_name }}"
-version = "0.1.0"
+version = "2020.1"
 description = "{{ cookiecutter.project_description }}"
 license = "{{ cookiecutter.license|upper }}"
 
@@ -23,16 +23,20 @@ keywords = []
 
 classifiers = [
   "Development Status :: 3 - Alpha",
-  "Intended Audience :: Developers",
+  "Intended Audience :: Scientists",
   "Operating System :: OS Independent",
   "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 
 [tool.poetry.dependencies]
-python = "^3.6"
+python = "^3.6.1"
 
 [tool.poetry.dev-dependencies]
 mypy = "^0.782"
+
+autopep8 = "^1.5.3"
+add-trailing-comma = "^2.0.1"
+isort = "^4.3.21"
 
 wemake-python-styleguide = "^0.14"
 flake8-pytest-style = "^1.2"
@@ -43,9 +47,13 @@ safety = "^1.9"
 pytest = "^5.4"
 pytest-cov = "^2.10"
 pytest-randomly = "^3.4"
+pytest-sugar = "^0.9.3"
 
 sphinx = "^2.2"
 sphinx-autodoc-typehints = "^1.10"
 doc8 = "^0.8"
 m2r = "^0.2"
 tomlkit = "^0.6"
+
+bpython = "^0.19"
+pre-commit = "^2.6.0"
