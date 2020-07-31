@@ -1,14 +1,27 @@
 {
+  // See .editorconfig for most general settings
+
+  // general
+  "editor.formatOnSave": true,
+
+  // ***python***
+  // general
   "python.pythonPath": ".venv/bin/python",
+
+  // linting
   "python.linting.flake8Enabled": true,
-  "python.linting.mypyPath": ".venv/bin/mypy",
   "python.linting.flake8Path": ".venv/bin/flake8",
+  "python.linting.mypyPath": "$HOME/.mypyls/bin/mypy",
+
+  // formatting
   "python.formatting.provider": "autopep8",
   "python.formatting.autopep8Path": ".venv/bin/autopep8",
-  "python.testing.pytestPath": ".venv/bin/pytest",
+
+  // testing
+  "python.testing.pytestEnabled": true,
   "python.testing.unittestEnabled": false,
   "python.testing.nosetestsEnabled": false,
-  "python.testing.pytestEnabled": true,
+  "python.testing.pytestPath": ".venv/bin/pytest",
   "python.testing.pytestArgs": [
     "tests"
   ],
