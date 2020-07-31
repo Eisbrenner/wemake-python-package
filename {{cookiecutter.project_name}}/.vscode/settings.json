@@ -12,6 +12,9 @@
   "python.linting.flake8Enabled": true,
   "python.linting.flake8Path": ".venv/bin/flake8",
   "python.linting.mypyPath": "$HOME/.mypyls/bin/mypy",
+  "mypy.targets": [
+    "src/{{ cookiecutter.project_name }}"
+  ],
 
   // formatting
   "python.formatting.provider": "autopep8",
