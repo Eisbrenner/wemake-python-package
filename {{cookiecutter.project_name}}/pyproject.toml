@@ -32,11 +32,14 @@ classifiers = [
 python = "^3.6.1"
 
 [tool.poetry.dev-dependencies]
-mypy = "^0.782"
+# pre-commit dependencies are hard coded in .pre-commit-config.yaml
+pre-commit = "^2.6.0"
+mypy = "0.782"
+autopep8 = "1.5.3"
+isort = "4.3.21"
 
-autopep8 = "^1.5.3"
+# checks, formatting and linting
 add-trailing-comma = "^2.0.1"
-isort = "^4.3.21"
 
 wemake-python-styleguide = "^0.14"
 flake8-pytest-style = "^1.2"
@@ -44,16 +47,18 @@ nitpick = "^0.22"
 
 safety = "^1.9"
 
+# testing
 pytest = "^5.4"
 pytest-cov = "^2.10"
 pytest-randomly = "^3.4"
 pytest-sugar = "^0.9.3"
 
+# docs
 sphinx = "^2.2"
 sphinx-autodoc-typehints = "^1.10"
 doc8 = "^0.8"
 m2r = "^0.2"
 tomlkit = "^0.6"
 
+# convinience
 bpython = "^0.19"
-pre-commit = "^2.6.0"
