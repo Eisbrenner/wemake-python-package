@@ -35,13 +35,11 @@ python = "^3.6.1"
 # pre-commit dependencies are hard coded in .pre-commit-config.yaml
 pre-commit = "^2.6.0"
 mypy = "0.782"
-autopep8 = "1.5.3"
+black = "19.10b0"
 isort = "4.3.21"
 
 # checks, formatting and linting
-add-trailing-comma = "^2.0.1"
-
-wemake-python-styleguide = "^0.14"
+wemake-python-styleguide = "^1.14"
 flake8-pytest-style = "^1.2"
 nitpick = "^0.22"
 
@@ -62,3 +60,24 @@ tomlkit = "^0.6"
 
 # convinience
 bpython = "^0.19"
+
+
+[tool.black]
+line-length = 88
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  | tests/.*/setup.py
+  | \.history
+)/
+'''
