@@ -30,7 +30,9 @@ lice = "^0.6"
 [tool.poetry.dev-dependencies]
 binaryornot = "^0.4"
 
-wemake-python-styleguide = "^0.14"
+# wemake-python-styleguide = "^0.14"
+wemake-python-styleguide = { git = "https://github.com/wemake-services/wemake-python-styleguide.git", rev = "dffa5cb" }
+
 flake8-pytest-style = "^1.2"
 nitpick = "^0.22"
 
