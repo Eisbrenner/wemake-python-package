@@ -4,9 +4,10 @@ repos:
     hooks:
       - id: check-yaml
       - id: end-of-file-fixer
+        exclude: "LICENSE"
       - id: trailing-whitespace
+        exclude: "LICENSE"
       - id: debug-statements
-    exclude: LICENSE
 
   - repo: https://gitlab.com/pycqa/flake8
     rev: 3.8.4
