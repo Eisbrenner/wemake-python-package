@@ -3,7 +3,7 @@
   "organization": "wemake.services",
   "project_description": "This is how python package should look like!",
 
-  "license": "GPL",
+  "license": "gpl3",
 
   "_extensions": ["jinja2_git.GitExtension"],
   "_copy_without_render": [
