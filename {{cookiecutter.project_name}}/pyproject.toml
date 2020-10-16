@@ -9,7 +9,7 @@ style = "https://raw.githubusercontent.com/Eisbrenner/wemake-python-package/mast
 
 [tool.poetry]
 name = "{{ cookiecutter.project_name }}"
-version = "2020.1"
+version = "20.1"
 description = "{{ cookiecutter.project_description }}"
 license = "{{ cookiecutter.license|upper }}"
 
