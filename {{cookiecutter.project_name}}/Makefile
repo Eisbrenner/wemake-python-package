@@ -2,7 +2,9 @@ SHELL:=/usr/bin/env bash
 
 .PHONY: lint
 lint:
-	mypy src/{{ cookiecutter.project_name.lower().replace('-', '_') }} tests/**/*.py
+	mypy -p {{ cookiecutter.project_name.lower().replace('-', '_') }}
+	mypy tests/**/*.py
+	black --check .
 	flake8 .
 	doc8 -q docs
 

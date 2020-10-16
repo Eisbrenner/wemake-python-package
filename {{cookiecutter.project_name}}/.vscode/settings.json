@@ -7,16 +7,20 @@
   // ***python***
   // general
   "python.pythonPath": ".venv/bin/python",
+  "python.dataScience.sendSelectionToInteractiveWindow": true,
+  "python.languageServer": "Pylance",
+  "python.analysis.typeCheckingMode": "basic",
+  "[python]": {
+    "editor.rulers": [
+      88
+    ]
+  },
 
   // linting
   "python.linting.enabled": true,
   "python.linting.lintOnSave": true,
   "python.linting.flake8Enabled": true,
   "python.linting.flake8Path": ".venv/bin/flake8",
-  "python.linting.mypyPath": "$HOME/.mypyls/bin/mypy",
-  "mypy.targets": [
-    "src/{{ cookiecutter.project_name }}"
-  ],
 
   // formatting
   "python.formatting.provider": "black",

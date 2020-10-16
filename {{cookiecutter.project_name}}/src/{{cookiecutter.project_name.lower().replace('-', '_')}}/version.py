@@ -8,10 +8,10 @@ def _get_version(dist_name: str) -> str:  # pragma: no cover
     try:
         return pkg_resources.get_distribution(dist_name).version
     except pkg_resources.DistributionNotFound:
-        return ''  # readthedocs can not install `poetry` projects
+        return ""  # readthedocs can not install `poetry` projects
 
 
-pkg_name = '{{ cookiecutter.project_name }}'
+pkg_name = "{{ cookiecutter.project_name }}"
 
 #: We store the version number inside the `pyproject.toml`:
 pkg_version: str = _get_version(pkg_name)
